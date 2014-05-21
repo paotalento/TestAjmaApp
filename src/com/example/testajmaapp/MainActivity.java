@@ -27,6 +27,8 @@ public class MainActivity extends ActionBarActivity {
 		}
 		//AnimatedLogo logo = new AnimatedLogo(this, "file://assets/logo_animated.gif");
 		//GIFView view = new GIFView(this, "http://s30.postimg.org/rfp4bnz67/logo_animated.gif");
+		ImageView view = (ImageView) findViewById(R.id.animatedLogoPlaceholder);
+		Ion.with(view).load("http://s30.postimg.org/rfp4bnz67/logo_animated.gif");
 		setContentView(R.layout.activity_main);
 		
 		
