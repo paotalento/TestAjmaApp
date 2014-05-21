@@ -1,5 +1,7 @@
 package com.example.testajmaapp;
 
+import com.koushikdutta.ion.Ion;
+
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.ActionBar;
 import android.support.v4.app.Fragment;
@@ -9,6 +11,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.os.Build;
 
 public class MainActivity extends ActionBarActivity {
@@ -23,7 +26,10 @@ public class MainActivity extends ActionBarActivity {
 					.add(R.id.container, new PlaceholderFragment()).commit();
 		}
 		//AnimatedLogo logo = new AnimatedLogo(this, "file://assets/logo_animated.gif");
+		//GIFView view = new GIFView(this, "http://s30.postimg.org/rfp4bnz67/logo_animated.gif");
 		setContentView(R.layout.activity_main);
+		
+		
 	}
 
 	@Override
